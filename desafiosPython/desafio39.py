@@ -7,13 +7,14 @@ idade = dataAtual - anoNascimento
 
 if idade == 18:
     print("Você tem a idade certa para se alistar ao serviço militar!")
+    print(f"Seu alistamento é nesse ano de {dataAtual}")
 elif idade < 18:
-    alistamento = 18 - idade
+    alistamento = anoNascimento + 18
     print("Você ainda vai se alistar ao serviço militar!")
-    print(f"Falta exatamente {alistamento} anos para se alistar! ")
+    print(f"Seu alistamento será em {alistamento}")
 elif idade > 18:
-    alistamento = idade - 18
-    print("Você já passou do tempo do alistamento!")
-    print(f"Passou exatamente {alistamento} anos do tempo certo para se alistar!")
+    alistamento = 18 + anoNascimento
+    print("Você já passou do tempo de se alistar!")
+    print(f"Seu alistamento foi em {alistamento}")
 
 
